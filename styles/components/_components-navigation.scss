@@ -1,6 +1,5 @@
 .navbar {
     position: relative;
-    box-shadow: $navbar-shadow;
     display: grid;
     grid-template-columns: 1fr 5fr;
     height: max-content;
@@ -15,6 +14,8 @@
         &-logo {
             height: 100%;
             width: 100%;
+            display: flex;
+            justify-content: center;
 
             .logo-nav {
                 width: 180px;
