@@ -46,19 +46,41 @@
             <h1>GABRIELA POMETKOVA</h1>
         </div>
         <div class="home-main-content">
+
             <div class="home-main-content-box home-main-content-box-photos">
-                <div class="home-main-content-box-hover">
+                <div class="home-main-content-box-photos-hover">
                     <!-- <img class="home-main-content-box-hover-img" src="/assets/icons/camera.svg" alt="camera"> -->
-                    <i class="far fa-images fa-3x home-main-content-box-hover-img"></i>
+                    <i class="far fa-images fa-3x home-main-content-box-photos-hover-img"></i>
                     <a class="home-main-content-box-hover-cta header-link" href="#/photos">Check all photos</a>
                 </div>
             </div>
-            <div class="home-main-content-box home-main-content-box-videos">vide</div>
+
+
+            <div class="home-main-content-box home-main-content-box-videos">
+                <div>
+                    <video class="home-main-content-box-videos-video" muted loop id="myVideo">
+                        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                </div>
+                <div class="home-main-content-box-videos-hover">
+                    <i class="fas fa-video fa-3x home-main-content-box-videos-hover-img"></i>
+                    <a class="home-main-content-box-hover-cta header-link" href="#/videos">Check all videos</a>
+                </div>
+            </div>
+
+
             <div class="home-main-content-box home-main-content-box-film">film</div>
             <div class="home-main-content-box home-main-content-box-photos">photos</div>
         </div>
     </main>
 
+    <script>
+        let viewport = document.getElementsByClassName('home-main-content-box home-main-content-box-videos')[0]
+        let video = document.getElementById('myVideo')
+        viewport.addEventListener('mouseover', function () { video.play() }, false);
+        viewport.addEventListener('mouseout', function () { video.pause() }, false);
+    </script>
 
 </body>
 

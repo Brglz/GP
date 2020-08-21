@@ -428,7 +428,7 @@ h4 {
 .header-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: purple;
+  color: #C8A2C8;
 }
 
 .box-link {
@@ -712,82 +712,6 @@ footer li:hover {
   margin-left: 10px;
 }
 
-.navbar__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0 30px;
-}
-
-@media (max-width: 599px) {
-  .navbar__items {
-    display: none;
-  }
-}
-
-.navbar__item {
-  list-style: none;
-  margin: 15px;
-}
-
-.navbar__item a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #565656;
-  cursor: pointer;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
-}
-
-.navbar__item :hover {
-  color: #FF9100;
-}
-
-.navbar__logo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: max-content max-content;
-      grid-template-columns: -webkit-max-content -webkit-max-content;
-      grid-template-columns: max-content max-content;
-  -webkit-column-gap: 16px;
-          column-gap: 16px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar__search {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: max-content max-content;
-      grid-template-columns: -webkit-max-content -webkit-max-content;
-      grid-template-columns: max-content max-content;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar__search .menu {
-  display: none;
-}
-
-@media (max-width: 599px) {
-  .navbar__search .menu {
-    display: inherit;
-  }
-}
-
-@media (max-width: 599px) {
-  .navbar__search .search {
-    display: none;
-  }
-}
-
 .home-main {
   display: -ms-grid;
   display: grid;
@@ -833,7 +757,15 @@ footer li:hover {
   position: relative;
 }
 
-.home-main-content-box-hover {
+.home-main-content-box-photos {
+  background: url("https://cdn.pixabay.com/photo/2020/08/10/07/35/woman-5477042_1280.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.home-main-content-box-photos-hover {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -856,24 +788,51 @@ footer li:hover {
   opacity: 0;
 }
 
-.home-main-content-box-hover:hover {
+.home-main-content-box-photos-hover:hover {
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 1;
 }
 
-.home-main-content-box-hover-img {
+.home-main-content-box-photos-hover-img {
   color: white;
   margin-bottom: 15px;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
 }
 
-.home-main-content-box-photos {
-  background: url("https://cdn.pixabay.com/photo/2020/08/10/07/35/woman-5477042_1280.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: 0.8;
+.home-main-content-box-videos {
+  overflow: hidden;
+}
+
+.home-main-content-box-videos-hover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+}
+
+.home-main-content-box-videos-hover:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.home-main-content-box-videos-hover-img {
+  color: white;
+  margin-bottom: 15px;
 }
 
 .small-container {

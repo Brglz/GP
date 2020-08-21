@@ -7,7 +7,7 @@
 
     &:hover {
         transform: scale(1.1);
-        color: purple;
+        color: $primary;
     }
 }
 
@@ -16,5 +16,4 @@
     text-decoration: none;
     color: white;
     cursor: pointer;
-    
 }
