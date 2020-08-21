@@ -1,0 +1,107 @@
+.navbar {
+    position: relative;
+    box-shadow: $navbar-shadow;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: max-content;
+    background-color: black;
+
+    &__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        &-logo {
+            // clip-path: circle(30% at 50% 50%);
+            // background-color: black;
+            height: 100%;
+            width: 100%;
+
+            .logo-nav {
+                width: 180px;
+                height: 120px;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
+        @include for-phone-only {
+            grid-template-columns: 1.2fr 1fr;
+            width: 90%;
+        }
+
+        .figure {
+            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+            background-color: white;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-project {
+                margin-left: 10px;
+            }
+           
+        }
+        
+        
+        
+    }
+
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 30px;
+        @include for-phone-only {
+            display: none;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        margin: 15px;
+
+        a { 
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $grey-700;
+            cursor: pointer;
+            transition: color 0.2s ease-out;
+        }
+
+        :hover {
+            color: $secondary-color;
+        }
+    }
+    &__logo {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 16px;
+        align-items: center;
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 30px;
+        align-items: center;
+
+        .menu {
+            display: none;
+            @include for-phone-only {
+                display: inherit;
+            }
+        }
+
+        .search {
+            @include for-phone-only {
+                display: none;
+            }
+        }
+    }
+}

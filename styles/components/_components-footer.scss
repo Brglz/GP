@@ -1,0 +1,51 @@
+footer {
+    display: grid;
+    grid-template-rows: 15px 1fr;
+    background-color: $grey-700;
+    color: $grey-200;
+
+    @include for-phone-only {
+        max-width: 375px;
+    }
+
+    h4 {
+        color: white;
+    }
+
+    .devider {
+        background-color: $grey-500;
+    }
+
+    .main-footer-wraper {
+        position: relative;
+        display: grid;
+        grid-template-columns: 230px 246px 155px 177px 190px;
+        column-gap: 50px;
+
+        @include for-phone-only {
+            grid-template-columns: none;
+        }
+
+        .cyclop {
+            position: absolute;
+            bottom: 0px;
+            @include for-phone-only {
+                display: none;
+            }
+        }
+
+        .nav-div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+       
+    }
+
+    li:hover {
+        color: $primary-300;   
+        cursor: pointer;
+    }
+
+}
+    
