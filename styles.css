@@ -403,7 +403,7 @@ h4 {
 .header-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #C8A2C8;
+  color: #A98FC8;
 }
 
 .box-link {
@@ -448,7 +448,7 @@ textarea {
   background-color: black;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .navbar {
     border-bottom: solid darkgray 1px;
   }
@@ -487,7 +487,7 @@ textarea {
   display: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .navbar__mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -506,9 +506,16 @@ textarea {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .navbar__wrapper {
     display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar__wrapper {
+    -ms-grid-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
   }
 }
 
@@ -542,7 +549,7 @@ textarea {
   background-color: black;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-main {
     -ms-grid-rows: 1fr 6fr;
         grid-template-rows: 1fr 6fr;
@@ -555,7 +562,7 @@ textarea {
   padding: 10px 0;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-main-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -585,7 +592,7 @@ textarea {
   margin: 0 auto 20px auto;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
   .home-main-content {
     display: -ms-grid;
     display: grid;
