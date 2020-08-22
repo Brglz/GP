@@ -393,7 +393,7 @@ h4 {
 
 .header-link {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
   cursor: pointer;
   -webkit-transition: .3s ease-in-out;
@@ -403,7 +403,6 @@ h4 {
 .header-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  color: #A98FC8;
 }
 
 .box-link {
@@ -652,12 +651,12 @@ textarea {
 }
 
 .home-main-content-box-photos-hover:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(200, 162, 200, 0.5);
   opacity: 1;
 }
 
 .home-main-content-box-photos-hover-img {
-  color: white;
+  color: black;
   margin-bottom: 15px;
 }
 
