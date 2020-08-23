@@ -533,7 +533,6 @@ textarea {
 
 @media (max-width: 699px) {
   .navbar__mobile-menu {
-    display: none;
     background-color: black;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -616,7 +615,7 @@ textarea {
   padding: 10px 0;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 1000px) {
   .home-main-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -646,7 +645,7 @@ textarea {
   margin: 0 auto 20px auto;
 }
 
-@media (max-width: 699px) {
+@media (max-width: 1000px) {
   .home-main-content {
     display: -ms-grid;
     display: grid;
@@ -717,7 +716,6 @@ textarea {
 
 .home-main-content-box-videos {
   overflow: hidden;
-  background: url("https://www.w3schools.com/howto/rain.mp4");
 }
 
 .home-main-content-box-videos video {

@@ -12,7 +12,7 @@
         color: white;
         padding: 10px 0;
 
-        @include for-phone-only {
+        @include for-tablet-portrait-up {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,7 +30,7 @@
         width: 90%;
         margin: 0 auto 20px auto;
 
-        @include for-phone-only {
+        @include for-tablet-portrait-up {
             display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: none;
@@ -81,9 +81,7 @@
 
             &-videos {
                 overflow: hidden;
-                // background: url('https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_1280.jpg');
-                background: url('https://www.w3schools.com/howto/rain.mp4');
-
+                
                 & video {
                     opacity: 1;
                 }
