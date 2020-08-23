@@ -47,7 +47,6 @@
             position: relative;
 
             &-photos {
-                // background: url(assets/images/woman-5477042_1280.jpg);
                 background: url('https://cdn.pixabay.com/photo/2020/08/10/07/35/woman-5477042_1280.jpg');
                 background-repeat: no-repeat;
                 background-position: center;
@@ -67,14 +66,13 @@
                     opacity: 0;
                     
                     &:hover {
-                        background-color: rgba($color: $primary, $alpha: 0.5);
-                        // background-color: rgba($color: #000000, $alpha: 0.8);
+                        background-color: rgba($color: $primary-300, $alpha: 0.4);
                         opacity: 1;
                     }
     
                     &-img {
                         color: black; 
-                        // columns: white;
+                        // color: white;
                         margin-bottom: 15px;
                     }
                 }
@@ -83,7 +81,13 @@
 
             &-videos {
                 overflow: hidden;
+                // background: url('https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_1280.jpg');
+                background: url('https://www.w3schools.com/howto/rain.mp4');
 
+                & video {
+                    opacity: 1;
+                }
+            
                 &-hover {
                     position: absolute;
                     background-color: rgba($color: #000000, $alpha: 0.2);;
@@ -95,11 +99,10 @@
                     justify-content: center;
                     align-items: center;
                     opacity: 0;
-                    
+                  
                     &:hover {
                         background-color: rgba($color: #000000, $alpha: 0.6);
                         opacity: 1;
-    
                     }
     
                     &-img {

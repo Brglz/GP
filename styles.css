@@ -393,7 +393,7 @@ h4 {
 
 .header-link {
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 20px;
   cursor: pointer;
   -webkit-transition: .3s ease-in-out;
@@ -401,6 +401,22 @@ h4 {
 }
 
 .header-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #A98FC8;
+}
+
+.main-link {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.main-link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -445,12 +461,6 @@ textarea {
   height: -moz-max-content;
   height: max-content;
   background-color: black;
-}
-
-@media (max-width: 699px) {
-  .navbar {
-    border-bottom: solid darkgray 1px;
-  }
 }
 
 .navbar__logo {
@@ -498,6 +508,40 @@ textarea {
   }
 }
 
+.navbar__mobile-item {
+  cursor: pointer;
+}
+
+.navbar__mobile-menu {
+  visibility: hidden;
+}
+
+@media (max-width: 699px) {
+  .navbar__mobile-menu {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transition: visibility 0s, opacity 1s ease-in-out;
+    transition: visibility 0s, opacity 1s ease-in-out;
+  }
+  .navbar__mobile-menu a {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
 .navbar__wrapper {
   display: -ms-grid;
   display: grid;
@@ -538,6 +582,12 @@ textarea {
 
 .navbar__wrapper-item-project {
   margin-left: 10px;
+}
+
+@media (max-width: 699px) {
+  header {
+    border-bottom: solid darkgray 1px;
+  }
 }
 
 .home-main {
@@ -651,7 +701,7 @@ textarea {
 }
 
 .home-main-content-box-photos-hover:hover {
-  background-color: rgba(200, 162, 200, 0.5);
+  background-color: rgba(169, 143, 200, 0.4);
   opacity: 1;
 }
 
@@ -662,6 +712,11 @@ textarea {
 
 .home-main-content-box-videos {
   overflow: hidden;
+  background: url("https://www.w3schools.com/howto/rain.mp4");
+}
+
+.home-main-content-box-videos video {
+  opacity: 1;
 }
 
 .home-main-content-box-videos-hover {

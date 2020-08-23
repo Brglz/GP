@@ -15,33 +15,43 @@
     <script src="./node_modules/sammy/lib/sammy.js"></script>
     <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
     <script src="./js/app.js" type="module"></script> -->
+    <script src="js/controllers/navigation.js"></script>
 
 </head>
 
 <body>
 
-    <header class="navbar">
-        <div class="navbar__logo">
-            <div class="navbar__logo-logo">
-                <img class="logo-nav" src="assets/icons/logo-white.svg" alt="logo">
+    <header>
+        <div class="navbar">
+            <div class="navbar__logo">
+                <div class="navbar__logo-logo">
+                    <img class="logo-nav" src="assets/icons/logo-white.svg" alt="logo">
+                </div>
             </div>
+            <nav class="navbar__wrapper">
+                <div class="figure"></div>
+                <div></div>
+                <div class="figure"></div>
+                <div class="navbar__wrapper-item"><a class="header-link" href="#/home">HOME</a></div>
+                <div class="figure"></div>
+                <div class="navbar__wrapper-item navbar__wrapper-item-project"><a class="header-link"
+                        href="#/projects">PROJECTS</a></div>
+                <div class="figure"></div>
+                <div class="navbar__wrapper-item"><a class="header-link" href="#/about">ABOUT</a></div>
+                <div class="figure"></div>
+                <div></div>
+
+            </nav>
+            <nav class="navbar__mobile">
+                <i class="fas fa-bars fa-3x navbar__mobile-item"></i>
+
+            </nav>
         </div>
-        <nav class="navbar__wrapper">
-            <div class="figure"></div>
-            <div></div>
-            <div class="figure"></div>
-            <div class="navbar__wrapper-item"><a class="header-link" href="#/home">HOME</a></div>
-            <div class="figure"></div>
-            <div class="navbar__wrapper-item navbar__wrapper-item-project"><a class="header-link"
-                    href="#/projects">PROJECTS</a></div>
-            <div class="figure"></div>
-            <div class="navbar__wrapper-item"><a class="header-link" href="#/about">ABOUT</a></div>
-            <div class="figure"></div>
-            <div></div>
-        </nav>
-        <nav class="navbar__mobile">
-            <i class="fas fa-bars fa-3x navbar__mobile-item"></i>
-        </nav>
+        <div class="navbar__mobile-menu">
+            <a>home</a>
+            <a>projects</a>
+            <a>about</a>
+        </div>
     </header>
 
     <main class="home-main">
@@ -53,22 +63,20 @@
             <div class="home-main-content-box home-main-content-box-photos">
                 <div class="home-main-content-box-photos-hover">
                     <!-- <img class="home-main-content-box-hover-img" src="/assets/icons/camera.svg" alt="camera"> -->
-                    <i class="far fa-images fa-3x home-main-content-box-photos-hover-img"></i>
-                    <a class="home-main-content-box-hover-cta header-link" href="#/photos">Check all photos</a>
+                    <i class="far fa-images fa-4x home-main-content-box-photos-hover-img"></i>
+                    <a class="home-main-content-box-hover-cta main-link" href="#/photos">Check all photos</a>
                 </div>
             </div>
 
 
             <div class="home-main-content-box home-main-content-box-videos">
-                <div>
-                    <video class="home-main-content-box-videos-video" muted loop id="myVideo">
-                        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
+                <video class="home-main-content-box-videos-video" muted loop id="myVideo">
+                    <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
                 <div class="home-main-content-box-videos-hover">
                     <i class="fas fa-video fa-3x home-main-content-box-videos-hover-img"></i>
-                    <a class="home-main-content-box-hover-cta header-link" href="#/videos">Check all videos</a>
+                    <a class="home-main-content-box-hover-cta main-link" href="#/videos">Check all videos</a>
                 </div>
             </div>
 
@@ -81,8 +89,8 @@
     <script>
         let viewport = document.getElementsByClassName('home-main-content-box home-main-content-box-videos')[0]
         let video = document.getElementById('myVideo')
-        viewport.addEventListener('mouseover', function () { video.play() }, false);
-        viewport.addEventListener('mouseout', function () { video.pause() }, false);
+        viewport.addEventListener('mouseover', async function () { await video.play() }, false);
+        viewport.addEventListener('mouseout', async function () { await video.load() }, false);
     </script>
 
 </body>

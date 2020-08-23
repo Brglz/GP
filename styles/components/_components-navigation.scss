@@ -5,9 +5,7 @@
     height: max-content;
     background-color: black;
 
-    @include for-phone-only {
-        border-bottom: solid darkgray 1px;
-    }
+   
 
     &__logo {
         display: flex;
@@ -37,6 +35,33 @@
             left: 80%;
             top: 30%;
         }
+
+        &-item {
+            cursor: pointer;
+        }
+
+        &-menu {
+                visibility: hidden;
+                @include for-phone-only {
+                visibility: hidden;
+                opacity: 0;
+                height: 0;
+                background-color: black;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                transition: 1s ease-in-out;
+                transition: visibility 0s, opacity 1s ease-in-out;
+
+                & a {
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+        }
+        
+
     }
 
     &__wrapper {
@@ -64,10 +89,17 @@
 
             &-project {
                 margin-left: 10px;
+
             }
            
         }
            
     }
     
+}
+
+header {
+    @include for-phone-only {
+        border-bottom: solid darkgray 1px;
+    }
 }
