@@ -20,6 +20,19 @@
     cursor: pointer;
     transition: .3s ease-in-out;
 
+    &-video {
+        color: white;
+        text-decoration: none;
+        font-size: 32px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &:hover {
+        transform: scale(1.1);
+        }
+    }
+
     &:hover {
         transform: scale(1.1);
         // color: $primary-300;

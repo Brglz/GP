@@ -16,6 +16,7 @@
     <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
     <script src="./js/app.js" type="module"></script> -->
     <script src="js/controllers/navigation.js"></script>
+    <script src="js/controllers/home.js"></script>
 
 </head>
 
@@ -76,7 +77,7 @@
                 </video>
                 <div class="home-main-content-box-videos-hover">
                     <i class="fas fa-video fa-3x home-main-content-box-videos-hover-img"></i>
-                    <a class="home-main-content-box-hover-cta main-link" href="#/videos">Check all videos</a>
+                    <a class="home-main-content-box-hover-cta main-link-video" href="#/videos">Check all videos</a>
                 </div>
             </div>
 
@@ -85,13 +86,6 @@
             <div class="home-main-content-box home-main-content-box-photos">photos</div>
         </div>
     </main>
-
-    <script>
-        let viewport = document.getElementsByClassName('home-main-content-box home-main-content-box-videos')[0]
-        let video = document.getElementById('myVideo')
-        viewport.addEventListener('mouseover', async function () { await video.play() }, false);
-        viewport.addEventListener('mouseout', async function () { await video.load() }, false);
-    </script>
 
 </body>
 

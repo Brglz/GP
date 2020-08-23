@@ -41,10 +41,11 @@
         }
 
         &-menu {
+
             display: none;
             
             @include for-phone-only {
-                    display: flex;
+                    display: none;
                     background-color: black;
                     justify-content: space-around;
                     align-items: center;
