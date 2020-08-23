@@ -42,10 +42,10 @@
 
         &-menu {
                 visibility: hidden;
+                height: 0;
+                opacity: 0;
                 @include for-phone-only {
                 visibility: hidden;
-                opacity: 0;
-                height: 0;
                 background-color: black;
                 color: white;
                 display: flex;

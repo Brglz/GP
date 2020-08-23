@@ -514,13 +514,13 @@ textarea {
 
 .navbar__mobile-menu {
   visibility: hidden;
+  height: 0;
+  opacity: 0;
 }
 
 @media (max-width: 699px) {
   .navbar__mobile-menu {
     visibility: hidden;
-    opacity: 0;
-    height: 0;
     background-color: black;
     color: white;
     display: -webkit-box;
