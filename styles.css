@@ -513,36 +513,24 @@ textarea {
 }
 
 .navbar__mobile-menu {
-  visibility: hidden;
-  height: 0;
-  opacity: 1;
+  display: none;
 }
 
 @media (max-width: 699px) {
   .navbar__mobile-menu {
-    visibility: hidden;
-    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-color: black;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transition: visibility 0s, opacity .5s ease-in-out;
-    transition: visibility 0s, opacity .5s ease-in-out;
   }
   .navbar__mobile-menu a {
     font-size: 20px;
     padding: 10px;
-    color: white;
-    cursor: pointer;
-  }
-  .navbar__mobile-menu a:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    color: #A98FC8;
   }
 }
 
