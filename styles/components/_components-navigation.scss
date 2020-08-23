@@ -43,20 +43,25 @@
         &-menu {
                 visibility: hidden;
                 height: 0;
-                opacity: 0;
+                opacity: 1;
                 @include for-phone-only {
                 visibility: hidden;
                 background-color: black;
-                color: white;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                transition: 1s ease-in-out;
-                transition: visibility 0s, opacity 1s ease-in-out;
+                transition: visibility 0s, opacity .5s ease-in-out;
 
                 & a {
                     font-size: 20px;
                     padding: 10px;
+                    color: white;
+                    cursor: pointer;
+                }
+
+                & a:hover {
+                    transform: scale(1.1);
+                    color: $primary-300;
                 }
             }
         }
