@@ -10,4 +10,11 @@ window.addEventListener('load', function () {
             menu.style.display = 'flex';
         }
     })
+
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 699) {
+            menu.style.display = 'none';
+        }
+    });
 })
