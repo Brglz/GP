@@ -4,16 +4,10 @@ window.addEventListener('load', function () {
 
     menuButton.addEventListener('click', () => {
 
-        if (menu.style.display == 'none') {
-
-            menu.style.display = 'flex';
-
-        } else {
-
+        if (menu.style.display == 'flex') {
             menu.style.display = 'none';
-
+        } else {
+            menu.style.display = 'flex';
         }
-
-
     })
 })

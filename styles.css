@@ -705,7 +705,7 @@ textarea {
 }
 
 .home-main-content-box-photos-hover:hover {
-  background-color: rgba(169, 143, 200, 0.4);
+  background-color: rgba(169, 143, 200, 0.6);
   opacity: 1;
 }
 
@@ -746,12 +746,12 @@ textarea {
 }
 
 .home-main-content-box-videos-hover:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(169, 143, 200, 0.6);
   opacity: 1;
 }
 
 .home-main-content-box-videos-hover-img {
-  color: white;
+  color: black;
   margin-bottom: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
