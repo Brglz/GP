@@ -118,7 +118,36 @@
             }
 
             &-films {
+                overflow: hidden;
+                
+                & video {
+                    opacity: 1;
+                }
+            
+                &-hover {
+                    position: absolute;
+                    background-color: rgba($color: #000000, $alpha: 0.2);
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.3s ease-in-out;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                  
+                    &:hover {
+                        // background-color: rgba($color: #000000, $alpha: 0.6);
+                        background-color: rgba($color: $primary-300, $alpha: 0.6);
 
+                        opacity: 1;
+                    }
+    
+                    &-img {
+                        color: black;
+                        margin-bottom: 15px;
+                    }
+                }
             }
         }
     }
