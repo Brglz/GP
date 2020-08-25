@@ -646,10 +646,6 @@ header {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
-  width: 90%;
   margin: 0 auto 20px auto;
 }
 
@@ -662,6 +658,7 @@ header {
     -ms-grid-columns: none;
         grid-template-columns: none;
     width: 85%;
+    row-gap: 20px;
   }
 }
 
@@ -675,7 +672,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: white solid 2px;
   height: 350px;
   width: 100%;
   position: relative;

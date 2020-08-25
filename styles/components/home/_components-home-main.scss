@@ -29,9 +29,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        row-gap: 20px;
-        column-gap: 30px;
-        width: 90%;
+        // row-gap: 20px;
+        // column-gap: 30px;
+        // width: 90%;
         margin: 0 auto 20px auto;
 
         @include for-tablet-portrait-up {
@@ -39,13 +39,14 @@
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: none;
             width: 85%;
+            row-gap: 20px;
         }
 
         &-box {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: white solid 2px;
+            // border: white solid 2px;
             height: 350px;
             width: 100%;
             position: relative;
