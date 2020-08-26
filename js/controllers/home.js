@@ -33,8 +33,6 @@ window.addEventListener('load', function () {
         if (!isPlaying) {
             video.play();
         }
-        console.log(e.target);
-
     }, false);
 
     viewport.addEventListener('mouseout', function (e) {
