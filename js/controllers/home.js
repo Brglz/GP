@@ -8,8 +8,6 @@ window.addEventListener('load', function () {
         if (!isPlaying) {
             film.play();
         }
-        console.log(e.target);
-
     }, false);
 
     viewportFilm.addEventListener('mouseout', function (e) {

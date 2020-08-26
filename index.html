@@ -44,8 +44,12 @@
 
             </nav>
             <nav class="navbar__mobile">
-                <i class="fas fa-bars fa-3x navbar__mobile-item"></i>
-
+                <!-- <i class="fas fa-bars fa-3x navbar__mobile-item"></i> -->
+                <button class="hamburger hamburger--spin navbar__mobile-item" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </nav>
         </div>
         <div class="navbar__mobile-menu">
@@ -70,7 +74,8 @@
             </div>
 
             <div class="home-main-content-box home-main-content-box-videos">
-                <video width="150%" height="200%" class="home-main-content-box-videos-video" muted loop id="myVideo">
+                <video width="150%" height="200%" class="home-main-content-box-videos-video" muted playsinline loop
+                    id="myVideo">
                     <source src="assets/video/Pulp Fiction (1994) in 10 seconds (online-video-cutter.com).mp4"
                         type="video/mp4">
                     Your browser does not support HTML5 video.
@@ -106,5 +111,15 @@
     </main>
 
 </body>
+<script>
+    // Look for .hamburger
+    var hamburger = document.querySelector(".hamburger");
+    // On click
+    hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+    });
+</script>
 
 </html>
