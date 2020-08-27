@@ -1,6 +1,7 @@
 .home-main {
     display: grid;
     grid-template-rows: 1fr 5fr;
+    row-gap: 30px;
     background-color: black;
 
     @include for-phone-only {

@@ -16,7 +16,6 @@ window.addEventListener('load', function () {
 
         if (isPlaying) {
             film.pause();
-            // video.currentTime = 0;
         }
 
     }, false);

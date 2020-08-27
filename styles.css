@@ -414,6 +414,7 @@ h4 {
   cursor: pointer;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+  outline: none;
 }
 
 .main-link-video {
@@ -604,6 +605,7 @@ header {
   display: grid;
   -ms-grid-rows: 1fr 5fr;
       grid-template-rows: 1fr 5fr;
+  row-gap: 30px;
   background-color: black;
 }
 
