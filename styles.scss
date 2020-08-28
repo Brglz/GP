@@ -4,15 +4,16 @@
 @import './styles/settings/_settings-colors';
 @import './styles/settings/_settings-breakpoints';
 
-@import './styles/objects/objects-inputs';
+@import './styles/objects/objects-images-size';
 
+@import './styles/elements/elements-inputs';
 @import './styles/elements/elements-links';
-@import './styles/elements/elements-textarea';
 
 @import './styles/utilities/utilities-icons';
 @import './styles/utilities/utilities-animations';
 
 @import './styles/components/_components-navigation';
 @import './styles/components/home/components-home-main';
+@import './styles/components/photos/components-photos-main';
 
 @import './node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';

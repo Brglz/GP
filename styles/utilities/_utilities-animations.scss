@@ -13,3 +13,20 @@
 .scale:hover {
     transform: scale(1.2);
 }
+
+@keyframes move-down {
+
+    0% {
+        top: 10%;
+    }
+
+    
+    50% {
+        top: 35%;
+    }
+
+    
+    100% {
+        top: 50%;
+    }
+}
