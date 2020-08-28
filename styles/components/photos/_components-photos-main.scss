@@ -103,11 +103,11 @@ main {
         }
 
        &-back {
-           color: white;
+           color: $primary-300;;
            transition: .3s ease-in-out;
 
            &:hover {
-               color: $primary-300;
+               color: white;
            }
        }
     }

@@ -990,13 +990,13 @@ main .main__footer {
 }
 
 main .main__footer-back {
-  color: white;
+  color: #A98FC8;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 main .main__footer-back:hover {
-  color: #A98FC8;
+  color: white;
 }
 
 /*!
