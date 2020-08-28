@@ -867,6 +867,7 @@ main {
   text-align: center;
   padding: 0;
   background-color: black;
+  padding-bottom: 50px;
 }
 
 main .main__header {
@@ -967,6 +968,35 @@ main .main__container-gallery-item:hover .main__container-gallery-item-text {
   opacity: 1;
   -webkit-animation: move-down .3s linear;
           animation: move-down .3s linear;
+}
+
+main .main__footer {
+  margin-top: 40px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1000px) {
+  main .main__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+main .main__footer-back {
+  color: white;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+main .main__footer-back:hover {
+  color: #A98FC8;
 }
 
 /*!

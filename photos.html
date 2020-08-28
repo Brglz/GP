@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- <link rel="icon" type="image/png" href="./public/favicon.png"> -->
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" /> -->
     <!-- <link rel="icon" type="image/png" href="assets/icons/logo-black.png" />
      -->
-    <link rel="shortcut icon" href="/assets/icons/gp64.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/gp64.png" type="image/x-icon">
     <!-- Modules -->
     <!-- <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
@@ -17,7 +17,7 @@
     <script src="./node_modules/sammy/lib/sammy.js"></script>
     <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
     <script src="./js/app.js" type="module"></script> -->
-    <script src="/js/controllers/navigation.js"></script>
+    <script src="js/controllers/navigation.js"></script>
     <title>Photos</title>
 </head>
 
@@ -63,7 +63,7 @@
     <main>
 
         <div class="main__header">
-            <h1>PHOTO GALERY</h1>
+            <h1 name="top">PHOTO GALERY</h1>
         </div>
         <div class="main__container">
 
@@ -210,8 +210,10 @@
                 </div>
 
             </div>
+        </div>
 
-
+        <div class="main__footer">
+            <a class="main__footer-back" href="#top"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
         </div>
     </main>
 

@@ -2,6 +2,7 @@ main {
     text-align: center;
     padding: 0;
     background-color: black;
+    padding-bottom: 50px;
 
 
     .main__header {
@@ -89,6 +90,25 @@ main {
 
             }
         }
+    }
 
+    .main__footer {
+        margin-top: 40px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        @include for-tablet-portrait-up {
+            display: flex;
+        }
+
+       &-back {
+           color: white;
+           transition: .3s ease-in-out;
+
+           &:hover {
+               color: $primary-300;
+           }
+       }
     }
 }
