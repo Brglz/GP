@@ -5,7 +5,25 @@
     height: max-content;
     background-color: black;
 
-   
+    @include for-phone-only {
+       grid-template-columns: 1fr 3fr 1fr;
+    //    position: fixed;
+    }
+
+   &__header {
+    display: none;
+    text-align: center;
+
+    @include for-phone-only {
+        display: block;
+     }
+    
+    & h1 {
+        color: white;
+        font-size: 16px;
+    }
+
+   }
 
     &__logo {
         display: flex;
@@ -18,10 +36,24 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            
+            & a {
+                @include for-phone-only {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
 
             .logo-nav {
                 width: 180px;
                 height: 120px;
+
+                @include for-phone-only {
+                    width: 100px;
+                    height: 50px;
+                }
             }
         }
     }
@@ -33,7 +65,7 @@
             display: flex;
             color: white;
             position: absolute;
-            left: 80%;
+            left: 85%;
             top: 35%;
         }
 
@@ -101,6 +133,8 @@
 header {
     border-bottom: solid darkgray 1px;
     @include for-phone-only {
-        border-bottom: solid darkgray 1px;
+        z-index: 4;
+        position: fixed;
+        width: 100%;
     }
 }

@@ -1,32 +1,50 @@
 .home-main {
     display: grid;
-    grid-template-rows: 1fr 5fr;
-    row-gap: 30px;
+    grid-template-rows: 1fr;
+    // row-gap: 30px;
     background-color: black;
 
+    @include for-tablet-portrait-up {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     @include for-phone-only {
-        grid-template-rows: 1fr 6fr;
+        // display: flex;
+        grid-template-rows: 1fr 5fr;
+        padding-top: 200px;
     }
 
     &-header {
         margin: 0 auto;
         color: white;
         padding: 10px 0;
-        border-bottom: 1px solid darkgray;
+        // border-bottom: 1px solid darkgray;
         width: 100%;
         text-align: center;
-        height: 80%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include for-phone-only {
+            border-bottom: none;
+            display: none;
+
+        }
 
         & h1 {
             letter-spacing: 1.4vw;
+            
+            @include for-phone-only {
+                display: none;
+            }
+
         }
 
-        @include for-tablet-portrait-up {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+        
     }
 
     &-content {

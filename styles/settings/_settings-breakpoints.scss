@@ -16,7 +16,7 @@
     }
 }
 
-@mixin for-desktop-up {
+@mixin for-between-phone-and-tablet {
     @media (min-width: 1200px) {
         @content;
     }
