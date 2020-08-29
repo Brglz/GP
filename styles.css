@@ -936,6 +936,12 @@ main {
   padding-bottom: 50px;
 }
 
+@media (max-width: 699px) {
+  main {
+    padding-top: 100px;
+  }
+}
+
 main .main__header {
   margin: 0 auto;
   color: white;

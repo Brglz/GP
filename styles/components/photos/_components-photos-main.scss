@@ -4,6 +4,10 @@ main {
     background-color: black;
     padding-bottom: 50px;
 
+    @include for-phone-only {
+        padding-top: 100px;
+    }
+
 
     .main__header {
         margin: 0 auto;
