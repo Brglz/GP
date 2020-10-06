@@ -30,3 +30,39 @@
         top: 50%;
     }
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.slideInFromLeft {
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.slideInFromRight {
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fadeIn {
+    animation: 2s fadeIn;
+}

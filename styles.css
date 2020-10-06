@@ -525,6 +525,83 @@ h4 {
   }
 }
 
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-200%);
+            transform: translateX(-200%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInFromLeft {
+  -webkit-animation: 1.5s ease-out 0s 1 slideInFromLeft;
+          animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(200%);
+            transform: translateX(200%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.slideInFromRight {
+  -webkit-animation: 1.5s ease-out 0s 1 slideInFromRight;
+          animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: 2s fadeIn;
+          animation: 2s fadeIn;
+}
+
 .navbar {
   position: relative;
   display: -ms-grid;
@@ -776,6 +853,7 @@ header {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  row-gap: 70px;
   margin: 0 auto 20px auto;
 }
 
