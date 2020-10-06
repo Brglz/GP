@@ -44,6 +44,7 @@ Remove the margin in all browsers.
 body {
   margin: 0;
   position: relative;
+  background-color: black;
 }
 
 /**
@@ -577,6 +578,60 @@ h4 {
 .slideInFromRight {
   -webkit-animation: 1.5s ease-out 0s 1 slideInFromRight;
           animation: 1.5s ease-out 0s 1 slideInFromRight;
+}
+
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slideInFromBottom {
+  -webkit-animation: 1.5s ease-out 0s 1 slideInFromBottom;
+          animation: 1.5s ease-out 0s 1 slideInFromBottom;
+}
+
+@-webkit-keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slideInFromTop {
+  -webkit-animation: 1.5s ease-out 0s 1 slideInFromTop;
+          animation: 1.5s ease-out 0s 1 slideInFromTop;
 }
 
 @-webkit-keyframes fadeIn {
