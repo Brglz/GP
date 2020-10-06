@@ -787,6 +787,7 @@ header {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   background-color: black;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 1000px) {

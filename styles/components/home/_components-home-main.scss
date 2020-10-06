@@ -3,6 +3,7 @@
     grid-template-rows: 1fr;
     // row-gap: 30px;
     background-color: black;
+    padding-bottom: 20px;
 
     @include for-tablet-portrait-up {
         display: block;
