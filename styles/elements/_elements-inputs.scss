@@ -25,7 +25,7 @@
         border: 1px solid $primary-300;
         border-radius: 6px;
         padding: 15px 20px;
-        color: $grey-500;
+        color: $primary-300;
         width: 410px;
         resize: none;
 
@@ -49,3 +49,25 @@
     height: 190px;
 }
 
+.btn {
+    background-color: transparent;
+    border: 1px solid $primary-300;
+    border-radius: 6px;
+    padding: 15px 20px;
+    color: $grey-500;
+    display: block;
+    margin: 0 auto;
+    // margin: 20px;
+    cursor: pointer;
+    
+
+    &:hover {
+        background-color: $primary-300;
+        border: 1px solid black;
+        color: black;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

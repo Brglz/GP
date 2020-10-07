@@ -393,7 +393,7 @@ h4 {
   border: 1px solid #A98FC8;
   border-radius: 6px;
   padding: 15px 20px;
-  color: #919191;
+  color: #A98FC8;
   width: 410px;
   resize: none;
 }
@@ -428,6 +428,27 @@ h4 {
 .message {
   width: 865px;
   height: 190px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #A98FC8;
+  border-radius: 6px;
+  padding: 15px 20px;
+  color: #919191;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #A98FC8;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .header-link {
@@ -653,8 +674,8 @@ h4 {
 }
 
 .fadeIn {
-  -webkit-animation: 2s fadeIn;
-          animation: 2s fadeIn;
+  -webkit-animation: 1.5s ease-out 0s 1 fadeIn;
+          animation: 1.5s ease-out 0s 1 fadeIn;
 }
 
 .navbar {
@@ -1323,7 +1344,7 @@ header {
   display: grid;
   -ms-grid-rows: .1fr 1fr 1.5fr;
       grid-template-rows: .1fr 1fr 1.5fr;
-  padding: 70px 0 70px 0;
+  padding: 70px 0 30px 0;
   row-gap: 70px;
 }
 
@@ -1348,15 +1369,15 @@ header {
   width: 90%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
+  -ms-grid-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.3fr;
   -webkit-column-gap: 50px;
           column-gap: 50px;
 }
 
 .about-main-info-img {
-  width: 450px;
-  height: 300px;
+  width: 500px;
+  height: 350px;
   border-radius: 90px 10px 90px 10px;
   -webkit-box-shadow: 20px 20px 0px 0px #A98FC8;
           box-shadow: 20px 20px 0px 0px #A98FC8;
