@@ -65,6 +65,8 @@
         background-color: $primary-300;
         border: 1px solid black;
         color: black;
+        border-radius: 20px 5px 20px 5px;
+        transition: .5s ease-in-out;
     }
 
     &:focus {

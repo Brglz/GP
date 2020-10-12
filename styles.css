@@ -445,6 +445,9 @@ h4 {
   background-color: #A98FC8;
   border: 1px solid black;
   color: black;
+  border-radius: 20px 5px 20px 5px;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .btn:focus {
@@ -1371,8 +1374,6 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 1.3fr;
       grid-template-columns: 1fr 1.3fr;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
 }
 
 .about-main-info-img {
@@ -1385,6 +1386,7 @@ header {
 
 .about-main-info-text {
   color: white;
+  text-align: justify;
 }
 
 .about-main-info-text p {
